@@ -1,0 +1,40 @@
+                     __           _    __                    
+                    / /__      __(_)  / /_  __  ______ ______
+                   / __/ | /| / / /  / __ \/ / / / __ `/ ___/
+                  / /_ | |/ |/ / /  / /_/ / /_/ / /_/ (__  ) 
+                  \__/ |__/|__/_/  /_.___/\__,_/\__, /____/  
+                                               /____/        
+
+2012JAN20
+* eliminated bug by rolling back code
+- side effect was re-building old app & discovering the 
+  following with string
+
+   aString = u"<unicode character>"
+   anotherString = "<unicode character>"
+
+- first example breaks the code, second does not?
+
+2013JAN15
+Traceback (most recent call last):
+  File "./tw.py", line 103, in <module>
+    main()
+  File "./tw.py", line 53, in main
+    if tw.twi.send_lyric(msg): 
+  File "/home/pr/ratpile/work/tw/tw/twi.py", line 28, in send_lyric
+    return send(m)
+  File "/home/pr/ratpile/work/tw/tw/twi.py", line 33, in send
+    if t.send(msg):
+  File "/home/pr/ratpile/work/tw/tw/twi.py", line 87, in send
+    self.save(message, update)
+  File "/home/pr/ratpile/work/tw/tw/twi.py", line 120, in save
+    f.write(line)
+UnicodeEncodeError: 'ascii' codec can't encode character u'\u266c' in position 13: ordinal not in range(128)
+
+
+2012DEC10
+* check incoming messages for
+- quotes (either no "'" or no '"', not both) 
+- length (less or equal to 140 char) 
+
+

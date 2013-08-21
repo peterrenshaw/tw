@@ -1,0 +1,31 @@
+2012DEC02
+* batch mode that sends more than 1 tweet & also has ability to send via file
+* want to be able to read lines from file
+- overcome limitations of CLI input, namely adding '$' to a line.
+- do this by reading from a file in /tw/f/yyyymmmdd.txt
+- inside file we have the following layout
+
+  hh:mm message
+
+- where
+    
+    hh = hours in 24 hours
+    mm = minutes from 0 to 59
+    space
+    message that is <= 140 characters
+
+- operation
+
+   ./tw.py -f $HOME/path/to/file/yyyymmmdd.txt
+
++ read filename    
+   yyyymmmdd.txt
+       22:47 10 PRINT CHR$(205.5+RND(1)); : GOTO 10
++ if its valid continue, else bug out
++ read file line by line
++ check line format for valid date + space + message < 140char + newline
++ add to a list/dictionary
++ then call twi send methods
++ if there's more than one line, either check post date or add timer from 
+  config & send. 
++ continue till end

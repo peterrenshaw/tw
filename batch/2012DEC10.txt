@@ -1,0 +1,15 @@
+# ~*~ encoding: utf-8 ~*~
+{'action': 0, 'status': 1, 'message': u''}
+{'action': 1, 'status': 1, 'message': u"when I hold you in my arms / it's a breath of fresh air / when I hold you in my arms / I forget what's out there"}
+{'action': 1, 'status': 1, 'message': u"all those people with their faces / walkin' up the street / they don't have to say a thing / just look around and you see"}
+{'action': 1, 'status': 1, 'message': u"new signs going up / old signs coming down / you gotta hold onto something in this life"}
+
+
+
+
+
+
+
+
+
+# vim: noet:noai:ts=4:sw=4:tw=179

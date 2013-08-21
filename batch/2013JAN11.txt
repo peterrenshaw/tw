@@ -1,0 +1,16 @@
+# ~*~ encoding: utf-8 ~*~
+{'action': 0, 'status': 1, 'message': u'this is a test message'}
+{'action': 0, 'status': 1, 'message': u'what? another message'}
+{'action': 0, 'status': 1, 'message': u'blast. yet another message'}
+
+
+
+
+
+
+
+
+
+
+
+# vim: noet:noai:ts=4:sw=4:tw=179

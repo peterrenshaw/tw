@@ -1,0 +1,21 @@
+   __           _ 
+  / /__      __(_)
+ / __/ | /| / / / 
+/ /_ | |/ |/ / /  
+\__/ |__/|__/_/ [1]  
+                  
+
+2013AUG21
+
+    'tw' is a very, very basic twitter client I wrote to send messages & 
+	save them. 
+
+Because Tweepy is not python3 ready, 'tw' is a python2X only tool.
+
+
+[1] 'Twi' title was created with an ASCII text generator using 'slant' and 'stretch=Yes". 
+The code is based on Figlet which can be found here ~ <http://www.figlet.org/>
+[Last accessed: Sunday 28th October, 2012]
+<http://www.network-science.de/ascii/>
+
+# vim: noet:noai:ts=4:sw=4:tw=78
